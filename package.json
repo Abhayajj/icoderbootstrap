@@ -1,0 +1,20 @@
+{
+  "name": "icoder-platform",
+  "version": "1.0.0",
+  "description": "A premium, production-ready developer community platform built with Bootstrap 5 and custom CSS.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "bootstrap5",
+    "developer-portfolio",
+    "blog",
+    "interactive"
+  ],
+  "author": "Abhay Gupta",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

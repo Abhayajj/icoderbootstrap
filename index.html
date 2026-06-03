@@ -1,184 +1,411 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="iCoder - The ultimate community and training platform for modern software engineers. Explore web dev, AI/ML, Python, and cloud tutorials.">
+    <meta name="author" content="Abhay Gupta">
+    <title>iCoder | Empowering Developers to Build the Future</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">TODAYS CODERS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-        <div class="alert alert-success" role="alert">
-            A simple info alert—check it out!
-        </div>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Are you sure!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+<body data-bs-theme="dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-code me-2"></i>iCoder
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-        <h1>Example heading <span class="badge badge-primary">New</span></h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">BLOG</a></li>
-                <li class="breadcrumb-item"><a href="#">TECHNOLOGY</a></li>
-                <li class="breadcrumb-item active" aria-current="page">BOOTSTRAP CODERS</li>
-            </ol>
-        </nav>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="option1" checked> Active
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option2"> Radio
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option3"> Radio
-            </label>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://media.istockphoto.com/id/1347494044/photo/smiling-young-asian-man-checking-electronic-banking-on-his-smartphone-as-he-received.webp?b=1&s=170667a&w=0&k=20&c=M-hCwapuCbKwN3uXRP5r7f2vAjxt5l5p8QHjoKJGsro="
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects & Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- Theme Toggle -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark mode">
+                            <i class="fa-solid fa-sun" id="themeIcon"></i>
+                        </button>
+                    </li>
+                    <!-- Get Started CTA -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="projects.html" class="btn btn-gradient-primary px-4 py-2 rounded-pill">Get Started</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-header">
-                Featured
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="badge bg-indigo-subtle text-indigo mb-3 px-3 py-2 rounded-pill border border-indigo-subtle" style="color: var(--accent-indigo)">
+                        🚀 Spark Your Dev Journey
+                    </div>
+                    <h1 class="display-3 fw-extrabold mb-4">
+                        Code, Create, and <span class="gradient-text">Innovate</span>
+                    </h1>
+                    <p class="lead text-secondary mb-4">
+                        Welcome to iCoder, the premier hub for developers, creators, and tech enthusiasts. Elevate your programming skills with interactive challenges, premium resources, and a vibrant global community.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="projects.html" class="btn btn-gradient-primary btn-lg px-4 py-3 rounded-pill">
+                            <i class="fa-solid fa-rocket me-2"></i>Explore Projects
+                        </a>
+                        <a href="about.html" class="btn btn-outline-custom btn-lg px-4 py-3 rounded-pill">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <!-- Floating Glass Card Mockup -->
+                        <div class="interactive-card glass-panel p-4 p-md-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-2 me-3" style="width: 12px; height: 12px;"></div>
+                                <div class="bg-warning rounded-circle p-2 me-3" style="width: 12px; height: 12px;"></div>
+                                <div class="bg-success rounded-circle p-2" style="width: 12px; height: 12px;"></div>
+                                <span class="ms-auto text-muted font-monospace small">main.js</span>
+                            </div>
+                            <pre class="font-monospace text-secondary mb-0"><code><span class="text-primary">const</span> icoder = {
+  mission: <span class="text-success">"Empower modern developers"</span>,
+  stack: [<span class="text-warning">"HTML5"</span>, <span class="text-warning">"CSS3"</span>, <span class="text-warning">"JS"</span>, <span class="text-warning">"Bootstrap 5"</span>],
+  readyForProduction: <span class="text-info">true</span>,
+  status: <span class="text-success">"🔥 Active"</span>
+};
+
+<span class="text-muted">// Build the future</span>
+<span class="text-primary">function</span> <span class="text-info">innovate</span>(developer) {
+  <span class="text-primary">return</span> developer.passion + icoder.mission;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
         </div>
-        <div class="container-fluid">
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://media.istockphoto.com/id/1461267773/photo/wind-turbine-and-a-solar-panel-at-sunset-sustainable-energy-source-for-smart-cities.webp?b=1&s=170667a&w=0&k=20&c=RHg5T-dlyrLIhXJzlZqiJvVwbKPSX4-Jm9imaIdMri4="
-                        1400*400px class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://media.istockphoto.com/id/1401573251/photo/hands-drawing-fresh-pure-water-from-the-spring-delicious-drinking-water-from-the-mountains-in.webp?b=1&s=170667a&w=0&k=20&c=CYq2T-qEQojvAC9hwWTBQFXHRo_XAQE8feTXayC_1yo="
-                        1400*400px class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://media.istockphoto.com/id/1409440844/photo/businessman-putting-us-money-into-his-suit-pocket.webp?b=1&s=170667a&w=0&k=20&c=884SM3UWURFuy3nXtJGC6fshYP8sVgxHS-DFYitSsx4="
-                        class="d-block w-100" alt="...">
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="glass-panel rounded-4 py-4 px-3 shadow">
+                <div class="row text-center">
+                    <div class="col-md-4 stat-item">
+                        <h2 class="display-5 fw-bold gradient-text mb-2">50K+</h2>
+                        <p class="text-secondary mb-0">Community Members</p>
+                    </div>
+                    <div class="col-md-4 stat-item">
+                        <h2 class="display-5 fw-bold gradient-text mb-2">120+</h2>
+                        <p class="text-secondary mb-0">Open Source Projects</p>
+                    </div>
+                    <div class="col-md-4 stat-item">
+                        <h2 class="display-5 fw-bold gradient-text mb-2">10M+</h2>
+                        <p class="text-secondary mb-0">Lines of Code Written</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row bg-danger">
-          <div class="col-3 border">
-            1 of 2
-          </div>
-          <div class="col-3 border">
-            2 of 2
-          </div>
+    </section>
+
+    <!-- Core Topics Section -->
+    <section class="py-6">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Trending Tech Categories</h2>
+                <p class="text-secondary max-width-md mx-auto">Stay ahead of the curve by diving into these industry-standard learning tracks.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Topic 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="interactive-card p-4 h-100 d-flex flex-column">
+                        <div class="mb-4 text-primary" style="font-size: 2.5rem; color: var(--accent-indigo)">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="mb-2">Web Development</h4>
+                        <p class="text-secondary flex-grow-1 small">Master the modern frontend and backend frameworks including React, Node, and Bootstrap 5.</p>
+                        <a href="projects.html?category=webdev" class="text-decoration-none mt-3 text-indigo fw-semibold">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <!-- Topic 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="interactive-card p-4 h-100 d-flex flex-column">
+                        <div class="mb-4 text-warning" style="font-size: 2.5rem;">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h4 class="mb-2">Python Mastery</h4>
+                        <p class="text-secondary flex-grow-1 small">Automate workflows, build web applications, and manipulate large data subsets with clean Python code.</p>
+                        <a href="projects.html?category=python" class="text-decoration-none mt-3 text-indigo fw-semibold">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <!-- Topic 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="interactive-card p-4 h-100 d-flex flex-column">
+                        <div class="mb-4 text-info" style="font-size: 2.5rem;">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h4 class="mb-2">AI & Machine Learning</h4>
+                        <p class="text-secondary flex-grow-1 small">Build predictive models, fine-tune neural networks, and integrate LLMs directly into applications.</p>
+                        <a href="projects.html?category=ai" class="text-decoration-none mt-3 text-indigo fw-semibold">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <!-- Topic 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="interactive-card p-4 h-100 d-flex flex-column">
+                        <div class="mb-4 text-danger" style="font-size: 2.5rem;">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h4 class="mb-2">Cloud Computing</h4>
+                        <p class="text-secondary flex-grow-1 small">Deploy applications globally with Docker, Kubernetes, AWS, and modern CI/CD automation.</p>
+                        <a href="projects.html?category=cloud" class="text-decoration-none mt-3 text-indigo fw-semibold">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row bg-success">
-          <div class="col border">
-            1 of 3
-          </div>
-          <div class="col border">
-            2 of 3
-          </div>
-          <div class="col border">
-            3 of 3
-          </div>
+    </section>
+
+    <!-- Interactive Quiz Widget -->
+    <section class="py-5 bg-opacity-10 bg-indigo">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Test Your Skills Instantly</h2>
+                    <p class="text-secondary">Take our developer micro-challenges. Sharpen your JavaScript knowledge and prepare for your coding interviews in just a few seconds.</p>
+                    <div class="d-flex align-items-center gap-2 mt-4 text-secondary">
+                        <i class="fa-solid fa-circle-check text-success"></i>
+                        <span>New coding challenge every week</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mt-2 text-secondary">
+                        <i class="fa-solid fa-circle-check text-success"></i>
+                        <span>Instant feedback on solution</span>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="quiz-widget glass-panel">
+                        <h5 class="fw-bold mb-3" id="quizQuestion">Loading Trivia...</h5>
+                        <div class="d-flex flex-column gap-2" id="quizOptions">
+                            <!-- Options load via JS -->
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between align-items-center">
+                            <span class="text-muted small" id="quizScore">Score: 0/0</span>
+                            <button class="btn btn-gradient-primary btn-sm px-3 rounded-pill d-none" id="nextQuizBtn">Next Challenge</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-6">
+        <div class="container">
+            <div class="glass-panel p-5 rounded-4 text-center max-width-md mx-auto position-relative overflow-hidden">
+                <div class="position-absolute start-0 top-0 w-100 h-100" style="background: radial-gradient(circle at 10% 20%, var(--gradient-glow) 0%, transparent 60%); z-index: -1;"></div>
+                <i class="fa-regular fa-paper-plane mb-3 text-indigo" style="font-size: 2.5rem; color: var(--accent-indigo)"></i>
+                <h2 class="fw-bold mb-2">Subscribe to our Newsletter</h2>
+                <p class="text-secondary mb-4 mx-auto" style="max-width: 500px;">Get weekly tech digests, project resources, and expert tutorials delivered straight to your inbox.</p>
+                <form class="d-flex flex-column flex-sm-row justify-content-center gap-2 max-width-sm mx-auto" style="max-width: 480px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+                    <input type="email" class="form-control px-4 py-3 rounded-pill" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-gradient-primary px-4 py-3 rounded-pill text-nowrap">Subscribe <i class="fa-solid fa-bell ms-1"></i></button>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3 fs-3" href="index.html">
+                        <i class="fa-solid fa-code me-2" style="color: var(--accent-indigo)"></i>iCoder
+                    </a>
+                    <p class="text-secondary small pe-lg-4">
+                        A curated developer platform designed to empower programmmers worldwide. Built with modern, clean technologies to boost developer portfolios and careers.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Quick Navigation</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-secondary text-decoration-none">About Us</a></li>
+                        <li><a href="projects.html" class="text-secondary text-decoration-none">Projects & Blog</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Connect With Creator</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="https://github.com/Abhayajj" target="_blank" class="text-secondary text-decoration-none"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-linkedin me-2"></i>LinkedIn Connect</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none"><i class="fa-solid fa-envelope me-2"></i>Direct Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-color">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mt-4 small">
+                <p class="text-secondary mb-0">© 2026 iCoder. All rights reserved.</p>
+                <p class="text-secondary mb-0">Crafted with <i class="fa-solid fa-heart text-danger mx-1"></i> by <a href="https://github.com/Abhayajj" target="_blank" class="text-primary text-decoration-none fw-semibold">Abhay Gupta</a></p>
+            </div>
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Interactive JS Functionality -->
+    <script>
+        // --- Light/Dark Theme Switcher Script ---
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const bodyEl = document.body;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        bodyEl.setAttribute('data-bs-theme', savedTheme);
+        updateThemeUI(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = bodyEl.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            bodyEl.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fa-solid fa-sun';
+            } else {
+                themeIcon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        // --- JavaScript Trivia Quiz Script ---
+        const quizData = [
+            {
+                question: "Which of the following is correct about features of JavaScript?",
+                options: [
+                    "JavaScript is a lightweight, interpreted programming language.",
+                    "JavaScript is designed for creating network-centric applications.",
+                    "JavaScript is complementary to and integrated with Java.",
+                    "All of the above."
+                ],
+                answer: 3
+            },
+            {
+                question: "How do we write a comment in JavaScript?",
+                options: [
+                    "/* Comment */",
+                    "// Comment",
+                    "# Comment",
+                    "<!-- Comment -->"
+                ],
+                answer: 1
+            },
+            {
+                question: "Which JavaScript method is used to select an element by its ID?",
+                options: [
+                    "getElementById()",
+                    "selectElementById()",
+                    "queryId()",
+                    "getElement()"
+                ],
+                answer: 0
+            },
+            {
+                question: "Which keyword is used to declare a block-scoped local variable in JavaScript?",
+                options: [
+                    "var",
+                    "let",
+                    "define",
+                    "constant"
+                ],
+                answer: 1
+            }
+        ];
+
+        let currentQuizIndex = 0;
+        let answeredQuestionsCount = 0;
+        let score = 0;
+
+        const quizQuestionEl = document.getElementById('quizQuestion');
+        const quizOptionsEl = document.getElementById('quizOptions');
+        const quizScoreEl = document.getElementById('quizScore');
+        const nextQuizBtn = document.getElementById('nextQuizBtn');
+
+        function loadQuiz() {
+            const quiz = quizData[currentQuizIndex];
+            quizQuestionEl.textContent = quiz.question;
+            quizOptionsEl.innerHTML = '';
+            nextQuizBtn.classList.add('d-none');
+
+            quiz.options.forEach((opt, idx) => {
+                const optButton = document.createElement('button');
+                optButton.className = 'btn text-start p-3 rounded-3 quiz-option';
+                optButton.textContent = opt;
+                optButton.addEventListener('click', () => selectOption(idx, optButton));
+                quizOptionsEl.appendChild(optButton);
+            });
+        }
+
+        function selectOption(selectedIdx, clickedButton) {
+            const quiz = quizData[currentQuizIndex];
+            const allOptionButtons = quizOptionsEl.querySelectorAll('.quiz-option');
+            
+            // Disable all options once answered
+            allOptionButtons.forEach(btn => btn.setAttribute('disabled', true));
+            
+            if (selectedIdx === quiz.answer) {
+                clickedButton.classList.add('correct');
+                score++;
+            } else {
+                clickedButton.classList.add('wrong');
+                // Highlight the correct one
+                allOptionButtons[quiz.answer].classList.add('correct');
+            }
+
+            answeredQuestionsCount++;
+            quizScoreEl.textContent = `Score: ${score}/${answeredQuestionsCount}`;
+            nextQuizBtn.classList.remove('d-none');
+        }
+
+        nextQuizBtn.addEventListener('click', () => {
+            currentQuizIndex = (currentQuizIndex + 1) % quizData.length;
+            loadQuiz();
+        });
+
+        // Initialize quiz
+        loadQuiz();
+    </script>
 </body>
 
 </html>

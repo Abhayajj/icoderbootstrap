@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Contact Us at iCoder - Get in touch for suggestions, support, collaborations, or general questions.">
+    <meta name="author" content="Abhay Gupta">
+    <title>Contact Us | iCoder Help Desk</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-code me-2"></i>iCoder
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects & Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- Theme Toggle -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark mode">
+                            <i class="fa-solid fa-sun" id="themeIcon"></i>
+                        </button>
+                    </li>
+                    <!-- Get Started CTA -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="projects.html" class="btn btn-gradient-primary px-4 py-2 rounded-pill">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 text-center bg-opacity-10 bg-indigo">
+        <div class="container">
+            <h1 class="display-4 fw-extrabold mb-3">Get In <span class="gradient-text">Touch</span></h1>
+            <p class="text-secondary max-width-md mx-auto" style="max-width: 600px;">
+                Have a coding question, collaboration proposal, or feedback? Drop us a line and we'll reply shortly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-6">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left Side: Contact Information -->
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-4">Contact Information</h2>
+                    <p class="text-secondary mb-4">
+                        Feel free to contact us through any of the channels below. We are always happy to answer your coding doubts.
+                    </p>
+                    
+                    <div class="d-flex flex-column gap-3 mb-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-secondary-subtle border d-flex align-items-center justify-content-center text-indigo" style="width: 50px; height: 50px; flex-shrink: 0; color: var(--accent-indigo)">
+                                <i class="fa-solid fa-envelope fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Email Support</h6>
+                                <p class="text-secondary small mb-0">abhaygupta@example.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-secondary-subtle border d-flex align-items-center justify-content-center text-indigo" style="width: 50px; height: 50px; flex-shrink: 0; color: var(--accent-indigo)">
+                                <i class="fa-solid fa-map-pin fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Headquarters</h6>
+                                <p class="text-secondary small mb-0">Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mockup Map UI Card -->
+                    <div class="interactive-card glass-panel p-4 position-relative overflow-hidden text-center" style="min-height: 200px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <div class="bg-indigo text-white p-3 rounded-circle shadow mb-2 d-inline-block animate-bounce" style="background: var(--accent-indigo); width: 60px; height: 60px;">
+                                <i class="fa-solid fa-location-crosshairs fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-1">Global Community Hub</h5>
+                            <p class="text-secondary small mb-0">Reaching developers in 140+ countries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="col-lg-7">
+                    <div class="interactive-card glass-panel p-4 p-md-5">
+                        <h3 class="fw-bold mb-4">Send a Message</h3>
+                        <form class="needs-validation" id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <!-- Name -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required minlength="2">
+                                        <label for="floatingName">Full Name</label>
+                                        <div class="invalid-feedback">Please enter your name (min 2 chars).</div>
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                                        <label for="floatingEmail">Email Address</label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <!-- Reason -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingReason" aria-label="Reason for contact" required>
+                                            <option value="" selected disabled>Select a reason...</option>
+                                            <option value="general">General Support / Doubts</option>
+                                            <option value="bug">Report a Bug / Mistake</option>
+                                            <option value="request">Suggest a Project Topic</option>
+                                            <option value="business">Business Proposal</option>
+                                        </select>
+                                        <label for="floatingReason">Reason for Contact</label>
+                                        <div class="invalid-feedback">Please select a reason.</div>
+                                    </div>
+                                </div>
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="floatingMessage" style="height: 150px" required minlength="10"></textarea>
+                                        <label for="floatingMessage">Your Message</label>
+                                        <div class="invalid-feedback">Please enter a detailed message (min 10 chars).</div>
+                                    </div>
+                                </div>
+                                <!-- Checkbox -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label text-secondary small" for="invalidCheck">
+                                            I agree to the privacy terms and cookies settings.
+                                        </label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                                <!-- Submit -->
+                                <div class="col-12">
+                                    <button class="btn btn-gradient-primary btn-lg w-100 rounded-pill py-3" type="submit">
+                                        Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Success Alert Message (Hidden Initially) -->
+                        <div class="alert alert-success d-none mt-4 rounded-4" role="alert" id="successAlert">
+                            <h5 class="alert-heading fw-bold mb-1"><i class="fa-solid fa-circle-check me-2"></i>Message Sent!</h5>
+                            <p class="mb-0 small">Thank you for reaching out to iCoder support. We will get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3 fs-3" href="index.html">
+                        <i class="fa-solid fa-code me-2" style="color: var(--accent-indigo)"></i>iCoder
+                    </a>
+                    <p class="text-secondary small pe-lg-4">
+                        A curated developer platform designed to empower programmmers worldwide. Built with modern, clean technologies to boost developer portfolios and careers.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Quick Navigation</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-secondary text-decoration-none">About Us</a></li>
+                        <li><a href="projects.html" class="text-secondary text-decoration-none">Projects & Blog</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Connect With Creator</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="https://github.com/Abhayajj" target="_blank" class="text-secondary text-decoration-none"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-linkedin me-2"></i>LinkedIn Connect</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none"><i class="fa-solid fa-envelope me-2"></i>Direct Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-color">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mt-4 small">
+                <p class="text-secondary mb-0">© 2026 iCoder. All rights reserved.</p>
+                <p class="text-secondary mb-0">Crafted with <i class="fa-solid fa-heart text-danger mx-1"></i> by <a href="https://github.com/Abhayajj" target="_blank" class="text-primary text-decoration-none fw-semibold">Abhay Gupta</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Form Validation Script -->
+    <script>
+        // --- Theme Switcher ---
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const bodyEl = document.body;
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        bodyEl.setAttribute('data-bs-theme', savedTheme);
+        updateThemeUI(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = bodyEl.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            bodyEl.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fa-solid fa-sun';
+            } else {
+                themeIcon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        // --- Client-side validation ---
+        const contactForm = document.getElementById('contactForm');
+        const successAlert = document.getElementById('successAlert');
+
+        contactForm.addEventListener('submit', event => {
+            event.preventDefault();
+            successAlert.classList.add('d-none');
+            
+            if (!contactForm.checkValidity()) {
+                event.stopPropagation();
+                contactForm.classList.add('was-validated');
+            } else {
+                // Form is valid!
+                contactForm.classList.remove('was-validated');
+                successAlert.classList.remove('d-none');
+                contactForm.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>
